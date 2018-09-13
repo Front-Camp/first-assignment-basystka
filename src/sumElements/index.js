@@ -11,7 +11,10 @@
  * sumElements([Infinity, NaN, 1]); // 1
  */
 const sumElements = arr => {
-  /* your logic here...*/
+  arr.reduce(function(previousValue, currentValue, index, array){
+  	return previousValue + currentValue;
+  });
+  
 };
 
 export default sumElements;
